@@ -48,7 +48,7 @@ int main(void) {
     /* Configure Pins in GPIOE */
     GPIO_Init(GPIOE,0,LED0|LED1);       // LED pins configured as output
 
-    GPIO_WritePins(GPIOE,0,LED0|LED1);  // Turn Off LEDs
+    GPIO_WritePins(GPIOE,LED0|LED1,0);  // Turn Off LEDs
 
     /* Blink loop */
     while (1) {
